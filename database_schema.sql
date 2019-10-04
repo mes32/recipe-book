@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS recipe_reference;
 DROP TABLE IF EXISTS recipe_step;
 DROP TABLE IF EXISTS recipe_item;
 DROP TABLE IF EXISTS recipe;
@@ -18,6 +19,12 @@ CREATE TABLE recipe_item (
 CREATE TABLE recipe_step (
     id SERIAL PRIMARY KEY
 	, recipe_id INT REFERENCES recipe(id)
-    , order INT NOT NULL
-    , task VARCHAR(1000) NOT NULL
+    , step_number INT NOT NULL
+    , step VARCHAR(1000) NOT NULL
+);
+
+CREATE TABLE recipe_reference (
+    id SERIAL PRIMARY KEY
+	, recipe_id INT REFERENCES recipe(id)
+    , reference VARCHAR(1000) NOT NULL
 );
