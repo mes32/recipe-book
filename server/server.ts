@@ -10,10 +10,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Setup server-side routes
 
 
-// Serve the static site files
+// // Serve the static site files
 app.use(express.static('build'));
 
-// Start the server listening on PORT = 5000
+// // Start the server listening on PORT = 5000
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Listening on port: ${PORT}`);

@@ -31,7 +31,9 @@ npm run client
 
 
 ## References
-
+- [https://typeorm.io/#/](https://typeorm.io/#/)
+- [https://bulma.io/documentation/](https://bulma.io/documentation/)
+- [https://alligator.io/react/intro-react-bulma-components/](https://alligator.io/react/intro-react-bulma-components/)
 
 ## Author
 Mike Stockman
